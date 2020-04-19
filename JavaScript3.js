@@ -2,36 +2,37 @@
 
 function divisible(number) {
     let i;
-    let divisibleNumber = [];
-    for (let i = 1; i <= number; i++) {
+    let divisibleNumber = []
+    for (i = 1; i <= number; i++) {
         let string = i;        
 
-        if (i%2 == 0) {
-            string = "yu"
-        } 
+        if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+            string = "yu" + "-" + "gi" + "-" + "oh"
+        }
         else if (i % 3 == 0 && i % 5 == 0) {
             string = "gi" + "-" + "oh"
         }
         else if (i % 2 == 0 && i % 5 == 0) {
             string = "yu" + "-" + "oh"
         }
+    
         else if (i % 2 == 0) {
-            string = "yu";
+            string = "yu"
         }
         else if (i % 3 == 0) {
-            string = "gi";
+            string = "gi"
         }
-        else if (i % 3 == 0) {
-            string = "oh";
+        else if (i % 5 == 0) {
+            string = "oh"
         }
         else {
-            string = i;
+            string = i
         }
         divisibleNumber.push(string)
     }
 
-    return divisibleNumber;
+    return divisibleNumber
 }
 
-const lastResult = divisible(20);
-console.log(lastResult);
+const lastResult1 = divisible(50)
+console.log(lastResult1)
