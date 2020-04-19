@@ -34,5 +34,5 @@ function divisible(number) {
     return divisibleNumber
 }
 
-const lastResult2 = divisible(50)
-console.log(lastResult2)
+const randomNumber = divisible(50)
+console.log(randomNumber)
