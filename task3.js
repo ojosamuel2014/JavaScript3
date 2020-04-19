@@ -33,5 +33,5 @@ function divisible(number) {
     return divisibleNumber;
 }
 
-const lastResult =divisible(20);
+const lastResult = divisible(20);
 console.log(lastResult);
